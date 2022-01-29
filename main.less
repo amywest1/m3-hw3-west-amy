@@ -27,9 +27,21 @@ header {
 .hero img {
     background-color: @backgroundcolor;
     opacity: @backgroundopacity;
-    width: 100%;
+    width: 64%;
     height: auto;
-    
+    position: absolute;
 }
 
-
+.logo {
+    position: relative;
+    max-width: fit-content;
+    margin: 0 auto;
+    img {
+        padding: 2rem 0;
+    }
+    button {
+       .buttons();
+       display: block;
+        margin: 0 auto;
+    }
+}
