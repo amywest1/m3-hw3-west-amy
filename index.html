@@ -6,7 +6,6 @@
     <!-- LESS Style sheet -->
     <link rel="stylesheet/less" type="text/css" href="main.less" />
 
-    <link rel="stylesheet" href="">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,44 +15,56 @@
     <meta name="description" content="">
   </head>
   <body>
-    <header>
-      <ul>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>About Us</li>
-        <li><span style="color: #EE252F">Order Now</span></li>
-      </ul>
-    </header>  
-    <div class="hero">
-      <img src="/img/banner-bg.png" alt="Bob's Burgers Storefront">
-    </div>
-    <div class="logo">  
-      <img src="/img/logo.png" alt="Bob's Burgers">
-      <button>Order Now</button>
-    </div>
+    <main>
+      <header>
+      <nav id="hamnav">
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger">&#9776;</label>
+        <input type="checkbox" id="hamburger"/>
+      
+        <!-- (C) MENU ITEMS -->
+        <div id="hamitems">
+          <ul>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>About Us</li>
+            <li><span style="color: #EE252F">Order Now</span></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    <div class="menu">
-      <h2>World's Best <span style="color: #EE252F">Burgers</span></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-      <button>View Menu</button>
-    </div>
+      <div class="hero">
+        <img src="/img/banner-bg.png" alt="Bob's Burgers Storefront">
+      </div>
+      <div class="logo">  
+        <img src="/img/logo.png" alt="Bob's Burgers">
+        <button>Order Now</button>
+      </div>
 
-    <div class="burger">
-      <img src="/img/bobs-burger.png" alt="cartoon hamburger">
-    </div>
-    <div class="bob">
-      <div class="contact">
-        <h2>Dine-in or <span style="color: #EE252F">Take-out</span></h2>
+      <div class="menu">
+        <h2>World's Best <span style="color: #EE252F">Burgers</span></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
-        <button>Contact Us</button>
-      </div>  
-    
-      <img src="/img/bob-headshot.png" alt="Bob Belcher">
-    </div>
-    <footer>
-      <img src="/img/logo.png" alt="Bob's Burgers">
-    </footer>
+        <button>View Menu</button>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+      <div class="burger">
+        <img src="/img/bobs-burger.png" alt="cartoon hamburger">
+      </div>
+      <div class="bob">
+        <div class="contact">
+          <h2>Dine-in or <span style="color: #EE252F">Take-out</span></h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+          <button>Contact Us</button>
+        </div>  
+      
+        <img src="/img/bob-headshot.png" alt="Bob Belcher">
+      </div>
+      <footer>
+        <img src="/img/logo.png" alt="Bob's Burgers">
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
+    </main>
   </body>
 </html>
