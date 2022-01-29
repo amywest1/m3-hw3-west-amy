@@ -22,11 +22,14 @@ header {
     }
 }
 
-.hero img {
-    opacity: @backgroundopacity;
-    width: 64%;
-    height: auto;
-    position: absolute;
+.hero {
+    background-color: @backgroundhero;
+    img {
+        opacity: @backgroundopacity;    
+        width: 64%;
+        height: auto;
+        position: absolute;
+    }
 }
 
 .logo {
@@ -64,14 +67,18 @@ header {
 .burger img {
     position: absolute;
     margin-top: 7rem;
+    max-width: 100%;
+    height: auto;
 }
 
 .bob {
     clear: left;
-    margin: 2rem 1rem 2rem 0;
+    margin: 2rem 0 2rem 0;
     background-color: @backgroundcolor;
     img {
         padding: 2rem 0 0 7rem;
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -92,4 +99,15 @@ header {
         margin: 0 1rem 0 7rem;
     }
     
+}
+
+footer {
+    background-color: @black;
+    border-top: .5rem solid @yellow;
+    img {
+        display: flex;
+        width: 25%;
+        padding: 1rem;
+        margin: 0 auto;
+    }
 }
