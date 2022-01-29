@@ -34,8 +34,9 @@ header {
 
 .logo {
     position: relative;
-    max-width: fit-content;
+    width: fit-content;
     margin: 0 auto;
+    height: auto;
     img {
         padding: 2rem 0;
     }
@@ -110,4 +111,44 @@ footer {
         padding: 1rem;
         margin: 0 auto;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo img {
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .burger img {
+        position: relative;
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+    }
+    .menu {
+        float: none;
+        width: 100%;
+        h2,
+        p {
+            padding: 0;
+        }
+        button {
+            margin: .5rem 0 1rem;
+        }
+    }
+
+    .contact {
+        float:none;
+        width: 100%;
+        h2, 
+        p {
+            padding: .5rem;
+        }
+        button {
+            margin: .5rem 0 1rem .5rem;
+        }
+    }
+    
 }
