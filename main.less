@@ -2,9 +2,7 @@
 @import "./mix-ins.less";
 
 html, body {
-    padding: 0;
-    margin: 0;
-    border: 0;
+    .reset();
     width: 80%;
     margin: 0 auto;
 }
@@ -44,4 +42,31 @@ header {
        display: block;
         margin: 0 auto;
     }
+}
+
+.menu {
+    width: 75%;
+    float: left;
+    h2 {
+        font-family: @font;
+        font-size: @fontsize;
+        font-weight: @fontweight;
+        color: @fontcolor;
+        text-transform: @upper;
+        padding: 5rem 7rem 0;
+        margin-bottom: 0;
+    }
+    p {
+        .bodycopy();
+        padding: 0 7rem;
+    }
+    button {
+        .buttons ();
+        margin: 0 7rem;
+    }
+}
+
+.burger img {
+    position: absolute;
+    margin-top: 7rem;
 }
