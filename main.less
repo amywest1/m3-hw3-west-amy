@@ -23,7 +23,6 @@ header {
 }
 
 .hero img {
-    background-color: @backgroundcolor;
     opacity: @backgroundopacity;
     width: 64%;
     height: auto;
@@ -47,14 +46,10 @@ header {
 .menu {
     width: 75%;
     float: left;
+    margin-bottom: 2rem;
     h2 {
-        font-family: @font;
-        font-size: @fontsize;
-        font-weight: @fontweight;
-        color: @fontcolor;
-        text-transform: @upper;
+        .h2();
         padding: 5rem 7rem 0;
-        margin-bottom: 0;
     }
     p {
         .bodycopy();
@@ -69,4 +64,32 @@ header {
 .burger img {
     position: absolute;
     margin-top: 7rem;
+}
+
+.bob {
+    clear: left;
+    margin: 2rem 1rem 2rem 7rem;
+    background-color: @backgroundcolor;
+    img {
+        padding: 2rem 0 0 3rem;
+    }
+}
+
+
+.contact {
+    width: 75%;
+    float: right;
+    h2 {
+        .h2();
+        padding: 2rem 1rem 0 7rem;
+    }
+    p {
+        .bodycopy();
+        padding: 0 1rem 0 7rem;
+    }
+    button {
+        .buttons();
+        margin: 0 1rem 0 7rem;
+    }
+    
 }
